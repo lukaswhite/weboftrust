@@ -1,0 +1,20 @@
+{
+    "name": "lukaswhite/weboftrust",
+    "description": "",
+    "authors": [
+        {
+            "name": "Lukas White",
+            "email": "hello@lukaswhite.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.2.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Lukaswhite\\Weboftrust": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}

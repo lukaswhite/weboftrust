@@ -1,0 +1,41 @@
+{
+    "operations": {
+        "lookup": {
+            "httpMethod": "GET",
+            "uri": "/0.4/public_link_json2?key={key}&hosts={+hosts}",
+            "responseType": "class",
+            "responseClass": "Lukaswhite\\Weboftrust\\ResponseParser",
+            "class": "Guzzle\\Service\\Command\\OperationCommand",
+            "parameters": {
+                "hosts": {
+                    "type": "string",
+                    "required": true,
+                    "location": "uri"
+                },
+                "callback": {
+                    "type": "string",
+                    "required": false,
+                    "location": "uri"
+                },
+                "key": {
+                    "type": "string",
+                    "required": true,
+                    "location": "uri"
+                },
+                "fields": {
+                    "type": "array",
+                    "required": false,
+                    "location": "uri"
+                }
+            }
+        }
+    },
+    "models": {
+        "GetReputationData": {
+            "type": "array",
+            "additionalProperties": {
+                "location": "json"
+            }
+        }
+    }
+}

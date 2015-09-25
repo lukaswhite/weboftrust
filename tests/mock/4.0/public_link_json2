@@ -1,0 +1,5 @@
+HTTP/1.1 200 OK
+Content-Type: application/x-javascript
+Content-Length: 154
+
+{ "www.bbc.co.uk": { "target": "bbc.co.uk", "0": [ 94, 77 ], "1": [ 94, 77 ], "2": [ 94, 77 ], "4": [ 94, 65 ], "categories": { "501": 97, "303": 15 } }, "example.com": { "target": "example.com", "0": [ 93, 59 ], "1": [ 93, 59 ], "2": [ 93, 59 ], "4": [ 94, 55 ], "categories": { "501": 94, "304": 15 } } }

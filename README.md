@@ -49,7 +49,7 @@ if ($website->isTrustworthy()) {
 }
 ```
 
-For the various methods you can call on the Website class, read on.
+For the various methods you can call on the `Website` class, read on.
 
 ##Trustworthiness
 
@@ -71,13 +71,13 @@ $suitable = ( ( $website->childSafety->reputation >= 50 ) && ( $website->childSa
 
 ##Categories
 
-Web of Trust place websites in one or more categories. You can find a [list here](https://www.mywot.com/wiki/API#Categories). It isn't quite as simple as saying a website belongs in a certain category, or it doesn't. Instead, if the API indicates that a website belongs to a category it also incoporates a degree of certainty, as a value which goes up to a hundred. So rather than ask the question "does this website contain adult content" what you should really ask is "what is the likliehood that this website contains adult content?". We can of course deal with absolutes by specifying a minimum threshold for the certainty, for example:
+Web of Trust place websites in one or more categories. You can find a [list here](https://www.mywot.com/wiki/API#Categories). It isn't quite as simple as saying a website belongs in a certain category, or it doesn't. Instead, if the API indicates that a website belongs to a category it also incoporates a degree of certainty, as a value which goes up to a hundred. So rather than ask the question "does this website contain adult content" what you should really ask is "what is the likliehood that this website contains adult content?". We can try to "convert" that into a simple "yes/no" by specifying a minimum threshold for the certainty, for example:
 
 ```php
 $is_adult = $website->isInCategory(Website::ADULT_CONTENT, 20);
 ```
 
-Here, we're asking if the website contains adult content, but we're also specifying that in order to answer "YES" to teh question, the certainty of that categorisation has to be at least twenty.
+Here, we're asking if the website contains adult content, but we're also specifying that in order to answer "YES" to the question, the certainty of that categorisation has to be at least twenty.
 
 It's worth noting that not all categories are bad, or even questionnable. The category identified by 501 is a "good site". You can check that:
 
@@ -113,7 +113,7 @@ $is_blacklisted_for_spam = $website->isBlacklisted('spam');
 ##A Note on Confidence
 
 The various components - trustworthiness and child safety, as well as categorisation - include a confidence value. This is a measure 
-of the degree of certainty of this assessment. As such, t's not necessarily enough to ask a question like "How trustworthy is this 
+of the degree of certainty of this assessment. As such, it's not necessarily enough to ask a question like "How trustworthy is this 
 website?". Rather, you would ask; "How trustworthy is this website, and how certain are you of the answer?".
 
 As such, conside this method:
@@ -122,8 +122,8 @@ As such, conside this method:
 $is_trustworthy = $website->isTrustworthy();
 ```
 
-Without any arguments, it makes assumptions about the minimum threshold - remember, there are no absolutes, merely a degree of 
-certainty in the form of a value between zero and one hundred - and also a threshold of certainty. Consider thf following:
+Without any arguments, this makes assumptions about the minimum threshold - remember, there are no absolutes, merely a degree of 
+certainty in the form of a value between zero and one hundred - and also a threshold of certainty. Consider the following:
 
 ```php
 $is_trustworthy = $website->isTrustworthy(50, 10);
@@ -139,7 +139,7 @@ higher. Depending on your requirements, or experience of playing around with the
 
 ##Disclaimer
 
-I have no affiliation with Web of Trust, and the data is crowd-sourced - so there are no guarrantees that it's correct. If you use this API and an unsuitable website is marked as suitable, or if a site you owned is marked as unsuitable, potentially dangerous, or containing questionnable material then I accept no responsbility.
+I have no affiliation with Web of Trust, and the data is crowd-sourced - so there are no guarrantees that it's correct. If you use this API and an unsuitable website is marked as suitable, or if a site you owned is marked as unsuitable, potentially dangerous, or containing questionnable material then I can't accept any responsbility.
 
 ##Questions
 

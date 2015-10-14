@@ -22,38 +22,38 @@ class Website {
 	**********************************************/
 
 	// Negative categories
-	const MALWARE_OR_VIRUSES 											= 101;
-	const POOR_CUSTOMER_EXPERIENCE 								= 102;
-	const PHISHING 																= 103;
-	const SCAM 																		= 104;
-	const POTENTIALLY_ILLEGAL 										= 105;
+	const MALWARE_OR_VIRUSES 			= 101;
+	const POOR_CUSTOMER_EXPERIENCE 			= 102;
+	const PHISHING 					= 103;
+	const SCAM 					= 104;
+	const POTENTIALLY_ILLEGAL 			= 105;
 	
 	// Questionable categories
-	const MISLEADING_CLAIMS_OR_UNETHICAL 					= 201;
-	const PRIVACY_RISKS 													= 202;
-	const SUSPICIOUS 															= 203;
-	const HATE_OR_DISCRIMINATION 									= 204;
-	const SPAM 																		= 205;
-	const POTENTIALLY_UNWANTED_PROGRAMS 					= 206;
-	const ADS_OR_POPUPS 													= 207;
+	const MISLEADING_CLAIMS_OR_UNETHICAL 		= 201;
+	const PRIVACY_RISKS 				= 202;
+	const SUSPICIOUS 				= 203;
+	const HATE_OR_DISCRIMINATION 			= 204;
+	const SPAM 					= 205;
+	const POTENTIALLY_UNWANTED_PROGRAMS 		= 206;
+	const ADS_OR_POPUPS 				= 207;
 	
 	// Neutral categories
-	const ONLINE_TRACKING 												= 301;
+	const ONLINE_TRACKING 				= 301;
 	const ALTERNATIVE_OR_CONTROVERSIAL_MEDICINE 	= 302;
-	const OPINIONS_RELIGION_POLITICS 							= 303;
-	const OTHER 																	= 304;
+	const OPINIONS_RELIGION_POLITICS 		= 303;
+	const OTHER 					= 304;
 	
 	// Positive categories
-	const GOOD_SITE 															= 501;
+	const GOOD_SITE 				= 501;
 
 	// Child safety
 	//  - Negative
-	const ADULT_CONTENT 													= 401;
+	const ADULT_CONTENT 				= 401;
 	//  - Questionnable
-	const INCIDENTAL_NUDITY 											=	402;
-	const GRUESOME_OR_SHOCKING 										= 403;
+	const INCIDENTAL_NUDITY 			= 402;
+	const GRUESOME_OR_SHOCKING 			= 403;
 	//  - Positive
-	const SITE_FOR_KIDS 													= 404;
+	const SITE_FOR_KIDS 				= 404;
 
 	/*********************************************
 	*
